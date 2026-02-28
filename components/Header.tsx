@@ -2,87 +2,109 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import LanguageSwitcher from './LanguageSwitcher';
+import { Locale } from '@/lib/dictionary';
 
-export default function Header() {
-  const [moreOpen, setMoreOpen] = useState(false);
+interface HeaderProps {
+  lang: Locale;
+  dict: any;
+}
+
+export default function Header({ lang, dict }: HeaderProps) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-2xl px-4">
-      <nav className="bg-black/40 backdrop-blur-xl rounded-full px-2 py-2 border border-white/10 shadow-2xl">
-        <ul className="flex items-center justify-between gap-1">
-          <li>
-            <Link 
-              href="/" 
-              className="px-5 py-2.5 rounded-full text-sm font-medium text-white/90 transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link 
-              href="#about" 
-              className="px-5 py-2.5 rounded-full text-sm font-medium text-white/90 transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link 
-              href="#work" 
-              className="px-5 py-2.5 rounded-full text-sm font-medium text-white/90 transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg"
-            >
-              Work
-            </Link>
-          </li>
-          <li className="relative">
-            <button
-              onClick={() => setMoreOpen(!moreOpen)}
-              className="px-5 py-2.5 rounded-full text-sm font-medium text-white/90 transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg flex items-center gap-1.5"
-            >
-              More
-              <svg 
-                className={`w-3.5 h-3.5 transition-transform duration-300 ${moreOpen ? 'rotate-180' : ''}`}
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
+    <>
+      <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-3xl px-4">
+        <nav className="bg-black/40 backdrop-blur-xl rounded-full px-2 py-2 border border-white/10 shadow-2xl">
+
+          {/* Desktop Navigation */}
+          <ul className="hidden md:flex items-center justify-between gap-0.5">
+            <li>
+              <Link href="/" className="px-4 py-2.5 rounded-full text-sm font-medium whitespace-nowrap text-white/90 transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg">
+                {dict.nav.home}
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="px-4 py-2.5 rounded-full text-sm font-medium whitespace-nowrap text-white/90 transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg">
+                {dict.nav.about}
+              </Link>
+            </li>
+            <li>
+              <Link href="/work" className="px-4 py-2.5 rounded-full text-sm font-medium whitespace-nowrap text-white/90 transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg">
+                {dict.nav.work}
+              </Link>
+            </li>
+            <li>
+                          <Link href="/book" className="px-4 py-2.5 rounded-full text-sm font-medium whitespace-nowrap text-white/90 transition-all duration-300 hover:bg-white hover:text-black hover:shadow-lg">
+                {dict.nav.contact}
+              </Link>
+            </li>
+            <li>
+              <LanguageSwitcher currentLang={lang} />
+            </li>
+            <li>
+              <Link
+                href="/book"
+                className="px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap bg-white text-black transition-all duration-300 hover:bg-white/90 hover:scale-105 hover:shadow-xl ml-1"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            
-            {moreOpen && (
-              <div className="absolute top-full mt-3 right-0 bg-black/90 backdrop-blur-xl rounded-3xl border border-white/10 py-2 min-w-[180px] shadow-2xl">
-                <Link 
-                  href="#services" 
-                  className="block px-6 py-3 text-sm font-medium text-white/90 hover:bg-white hover:text-black transition-all duration-300 first:rounded-t-3xl last:rounded-b-3xl"
-                >
-                  Services
-                </Link>
-                <Link 
-                  href="#contact" 
-                  className="block px-6 py-3 text-sm font-medium text-white/90 hover:bg-white hover:text-black transition-all duration-300"
-                >
-                  Contact
-                </Link>
-                <Link 
-                  href="#team" 
-                  className="block px-6 py-3 text-sm font-medium text-white/90 hover:bg-white hover:text-black transition-all duration-300 first:rounded-t-3xl last:rounded-b-3xl"
-                >
-                  Team
-                </Link>
-              </div>
-            )}
-          </li>
-          <li>
-            <Link 
-              href="#book" 
-              className="px-6 py-2.5 rounded-full text-sm font-medium bg-white text-black transition-all duration-300 hover:bg-white/90 hover:scale-105 hover:shadow-xl ml-1"
-            >
-              Book a Call
+                {dict.nav.bookCall}
+              </Link>
+            </li>
+          </ul>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden flex items-center justify-between">
+            <Link href="/" className="px-4 py-2 text-sm font-medium text-white/90">
+              {dict.nav.home}
             </Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="p-2 text-white/90 hover:text-white transition-colors"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
+        </nav>
+
+        {/* Mobile Menu Dropdown */}
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-3 bg-black/90 backdrop-blur-xl rounded-3xl border border-white/10 py-4 shadow-2xl">
+            <Link href="/about" className="block px-6 py-3 text-sm font-medium text-white/90 hover:bg-white hover:text-black transition-all duration-300" onClick={() => setMobileMenuOpen(false)}>
+              {dict.nav.about}
+            </Link>
+            <Link href="/work" className="block px-6 py-3 text-sm font-medium text-white/90 hover:bg-white hover:text-black transition-all duration-300" onClick={() => setMobileMenuOpen(false)}>
+              {dict.nav.work}
+            </Link>
+            <Link href="/book" className="block px-6 py-3 text-sm font-medium text-white/90 hover:bg-white hover:text-black transition-all duration-300" onClick={() => setMobileMenuOpen(false)}>
+              {dict.nav.contact}
+            </Link>
+            <div className="border-t border-white/10 my-2" />
+            <div className="px-3 py-2">
+              <LanguageSwitcher currentLang={lang} />
+            </div>
+            <div className="px-3 py-2 mt-2">
+              <Link
+                href="/book"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block w-full text-center px-6 py-3 rounded-full text-sm font-medium bg-white text-black transition-all duration-300 hover:bg-white/90"
+              >
+                {dict.nav.bookCall}
+              </Link>
+            </div>
+          </div>
+        )}
+      </header>
+
+    </>
   );
 }

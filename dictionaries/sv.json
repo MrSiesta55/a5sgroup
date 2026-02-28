@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Hem",
+    "about": "Om oss",
+    "work": "Arbete",
+    "more": "Mer",
+    "services": "Tjänster",
+    "contact": "Kontakt",
+    "blog": "Blogg",
+    "bookCall": "Boka Samtal"
+  },
+  "hero": {
+    "badge": "Tillgänglig för nya projekt",
+    "title1": "Skapar Digitala",
+    "title2": "Upplevelser",
+    "subtitle": "Förvandlar idéer till kraftfulla digitala lösningar.",
+    "subtitle2": "Webbutveckling, molnarkitektur och innovation.",
+    "cta1": "Se Vårt Arbete",
+    "cta2": "Kontakta Oss"
+  },
+  "services": {
+    "title": "Vad Vi Gör",
+    "subtitle": "Professionella lösningar för företag i alla storlekar",
+    "learnMore": "Läs Mer →",
+    "getStarted": "Kom Igång",
+    "webDev": {
+      "title": "Webbutveckling",
+      "description": "Professionella webbplatser för småföretag och anpassade webbapplikationer för komplexa behov."
+    },
+    "hosting": {
+      "title": "Hosting & Underhåll",
+      "description": "Snabb, pålitlig webbhotell på våra servrar. Vi håller din webbplats online, säker och uppdaterad."
+    },
+    "backend": {
+      "title": "Backend-utveckling",
+      "description": "Anpassade server-lösningar, databaser och API:er för avancerad funktionalitet."
+    },
+    "design": {
+      "title": "UI/UX Design",
+      "description": "Vackra, användarvänliga designer som fungerar perfekt på alla enheter."
+    }
+  },
+  "about": {
+    "eyebrow": "Vilka vi är",
+    "title": "Om A5S Group",
+    "subtitle": "Vi är ett litet, dedikerat tvåpersonsteam baserat i",
+    "location": "Falköping, Sverige",
+    "subtitleEnd": "— vi jobbar hemifrån och bygger digitala produkter för företag i alla storlekar. Litet team, riktigt arbete, transparenta resultat.",
+    "mustafe": {
+      "role": "Lead-utvecklare",
+      "bio": "Bygger och kodar allt — från landningssidor till fullstack-webbapplikationer. Fokuserad på rena, snabba och moderna lösningar."
+    },
+    "faster": {
+      "role": "Affärs- & kundrelationer",
+      "bio": "Hanterar kundkommunikation, projektplanering och tillväxtstrategi. Ser till att varje kund får exakt det de behöver."
+    },
+    "value1": {
+      "title": "Distans & Flexibelt",
+      "desc": "Vi jobbar hemifrån — det betyder lägre kostnader, snabbare kommunikation och mer värde för dig."
+    },
+    "value2": {
+      "title": "100% Transparent",
+      "desc": "Inga dolda avgifter, inga företagsslogans. Du vet alltid vem du pratar med och vad du betalar för."
+    },
+    "value3": {
+      "title": "Snabb Leverans",
+      "desc": "Litet team betyder ingen byråkrati. Vi rör oss snabbt och levererar i tid, varje gång."
+    }
+  },
+  "contactSection": {
+    "eyebrow": "Kontakta oss",
+    "title": "Låt Oss Bygga Något Tillsammans",
+    "subtitle": "Har du ett projekt i åtanke? Boka ett gratis samtal — ingen förbindele, inget tryck. Vi lyssnar och berättar exakt vad vi kan göra för dig.",
+    "bookCta": "Boka Gratis Samtal",
+    "email": "contact@a5sgroup.com",
+    "trust": "Gratis konsultation · Vi svarar inom 24 timmar · Inga dolda avgifter"
+  },
+  "contact": {
+    "title": "Låt Oss Samarbeta",
+    "description": "Har du ett projekt i åtanke? Låt oss förverkliga det."
+  },
+  "work": {
+    "eyebrow": "Vårt Arbete",
+    "title": "Projekt Vi Har Byggt",
+    "subtitle": "Riktiga produkter, live i produktion. Fler kommer snart.",
+    "liveLink": "Besök Sidan →",
+    "moreTitle": "Fler Projekt På Gång",
+    "moreText": "Vi tar just nu emot 2–3 nya projekt till ett reducerat pris för att bygga vår portfolio. Intresserad? Boka ett gratis samtal.",
+    "moreCta": "Boka Gratis Samtal",
+    "projects": [
+      {
+        "title": "iibfuran",
+        "description": "En fullutrustad annonsmarknadsplats för Östafrika. Köp, sälj och hyr fordon, elektronik, kläder, jobb och mer. Flerspråkig, mobilapp och företagskonton.",
+        "tags": ["Marknadsplats", "Full-Stack", "Östafrika", "Mobilapp"],
+        "url": "https://www.iibfuran.com",
+        "logo": "https://www.iibfuran.com/icon.png",
+        "year": "2025"
+      }
+    ]
+  },
+  "booking": {
+    "title": "Boka ett Gratis Samtal",
+    "subtitle": "Berätta vad du behöver — vi återkommer inom 24 timmar.",
+    "free": "100% Gratis · Ingen förbindelse",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "+46 70 123 45 67",
+    "name": "Ditt Namn",
+    "namePlaceholder": "Erik Svensson",
+    "email": "E-postadress",
+    "emailPlaceholder": "erik@exempel.se",
+    "message": "Hur kan vi hjälpa dig?",
+    "messagePlaceholder": "Berätta om ditt projekt eller din idé — vi lyssnar gärna...",
+    "submit": "Boka Gratis Samtal",
+    "submitting": "Skickar...",
+    "successTitle": "Vi har fått ditt meddelande!",
+    "successText": "Vi hör av oss inom 24 timmar. Ses snart!",
+    "close": "Stäng"
+  }
+}

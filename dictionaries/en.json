@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "more": "More",
+    "services": "Services",
+    "contact": "Contact",
+    "blog": "Blog",
+    "bookCall": "Book Free Call"
+  },
+  "hero": {
+    "badge": "Available for new projects",
+    "title1": "Crafting Digital",
+    "title2": "Experiences",
+    "subtitle": "Transforming ideas into powerful digital solutions.",
+    "subtitle2": "Web development, cloud architecture, and innovation.",
+    "cta1": "View Our Work",
+    "cta2": "Get In Touch"
+  },
+  "services": {
+    "title": "What We Do",
+    "subtitle": "Professional solutions for businesses of all sizes",
+    "learnMore": "Learn More →",
+    "getStarted": "Get Started",
+    "webDev": {
+      "title": "Web Development",
+      "description": "Professional websites for small businesses and custom web applications for complex needs."
+    },
+    "hosting": {
+      "title": "Hosting & Maintenance",
+      "description": "Fast, reliable hosting on our servers. We keep your website online, secure, and up-to-date."
+    },
+    "backend": {
+      "title": "Backend Development",
+      "description": "Custom server-side solutions, databases, and APIs for advanced functionality."
+    },
+    "design": {
+      "title": "UI/UX Design",
+      "description": "Beautiful, user-friendly designs that work perfectly on all devices."
+    }
+  },
+  "about": {
+    "eyebrow": "Who we are",
+    "title": "About A5S Group",
+    "subtitle": "We are a small, dedicated two-person team based in",
+    "location": "Falköping, Sweden",
+    "subtitleEnd": "— working remotely from home and building digital products for businesses of all sizes. Small team, real work, transparent results.",
+    "mustafe": {
+      "role": "Lead Developer",
+      "bio": "Builds and codes everything — from landing pages to full-stack web applications. Focused on clean, fast, and modern solutions."
+    },
+    "faster": {
+      "role": "Business & Client Relations",
+      "bio": "Handles client communication, project planning, and growth strategy. Makes sure every client gets exactly what they need."
+    },
+    "value1": {
+      "title": "Remote & Flexible",
+      "desc": "We work from home — which means lower overhead, faster communication, and more value for you."
+    },
+    "value2": {
+      "title": "100% Transparent",
+      "desc": "No hidden fees, no corporate fluff. You always know who you're talking to and what you're paying for."
+    },
+    "value3": {
+      "title": "Fast Delivery",
+      "desc": "Small team means no bureaucracy. We move quickly and deliver on time, every time."
+    }
+  },
+  "contactSection": {
+    "eyebrow": "Get in touch",
+    "title": "Let's Build Something Together",
+    "subtitle": "Have a project in mind? Book a free call — no commitment, no pressure. We'll listen and tell you exactly what we can do for you.",
+    "bookCta": "Book Free Call",
+    "email": "contact@a5sgroup.com",
+    "trust": "Free consultation · We reply within 24 hours · No hidden fees"
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "Have a project in mind? Let's make it happen."
+  },
+  "work": {
+    "eyebrow": "Our Work",
+    "title": "Projects We've Built",
+    "subtitle": "Real products, live in production. More coming soon.",
+    "liveLink": "Visit Site →",
+    "moreTitle": "More Projects Coming Soon",
+    "moreText": "We're currently taking on 2–3 new projects at a discounted rate to grow our portfolio. Interested? Book a free call.",
+    "moreCta": "Book Free Call",
+    "projects": [
+      {
+        "title": "iibfuran",
+        "description": "A full-featured classifieds marketplace for East Africa. Buy, sell, and rent vehicles, electronics, clothing, jobs and more. Multi-language, mobile app, and business accounts.",
+        "tags": ["Marketplace", "Full-Stack", "East Africa", "Mobile App"],
+        "url": "https://www.iibfuran.com",
+        "logo": "https://www.iibfuran.com/icon.png",
+        "year": "2025"
+      }
+    ]
+  },
+  "booking": {
+    "title": "Book a Free Call",
+    "subtitle": "Tell us what you need — we'll get back to you within 24 hours.",
+    "free": "100% Free · No commitment",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+46 70 123 45 67",
+    "name": "Your Name",
+    "namePlaceholder": "John Smith",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "message": "How can we help you?",
+    "messagePlaceholder": "Tell us about your project or idea — we'd love to hear it...",
+    "submit": "Book Free Call",
+    "submitting": "Sending...",
+    "successTitle": "We got your message!",
+    "successText": "We'll reach out to you within 24 hours. Talk soon!",
+    "close": "Close"
+  }
+}
