@@ -14,7 +14,7 @@ export default async function BookPage() {
     <>
       <DayNightBackground />
       <Header lang={lang} dict={dict} />
-      <main className="relative z-10 min-h-screen flex items-center justify-center px-4 py-32 font-sans">
+      <main className="relative z-10 min-h-screen flex items-center justify-center px-4 py-32 font-sans ">
         <BookForm dict={dict} />
       </main>
       <Footer lang={lang} dict={dict} />
