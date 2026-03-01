@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { cookies } from 'next/headers';
-import { Locale } from "@/lib/dictionary";
+import { Locale, getDictionary } from "@/lib/dictionary";
+import CookieBanner from "@/components/CookieBanner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -65,7 +66,8 @@ export default async function RootLayout({
 }>) {
   // Get language from cookie
   const cookieStore = await cookies();
-  const lang = (cookieStore.get('NEXT_LOCALE')?.value || 'en') as Locale;
+  const lang = (cookieStore.get('NEXT_LOCALE')?.value || 'sv') as Locale;
+  const dict = await getDictionary(lang);
 
   return (
     <html lang={lang}>
@@ -73,6 +75,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <CookieBanner dict={dict.cookies} />
       </body>
     </html>
   );

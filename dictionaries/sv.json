@@ -170,5 +170,43 @@
       { "q": "Vem jobbar jag med?", "a": "Direkt med oss — Mustafe (utvecklare) och Faster (kundrelationer). Inga mellanhänder, ingen outsourcing." },
       { "q": "Vad händer om jag inte är nöjd?", "a": "Vi itererar tills du är nöjd. Revideringar ingår under hela processen." }
     ]
+  },
+  "cookies": {
+    "title": "Vi använder cookies",
+    "description": "Vi använder cookies för att förbättra din upplevelse på vår webbplats. Genom att acceptera godkänner du vår användning av cookies för analys och personalisering.",
+    "acceptAll": "Acceptera alla",
+    "declineAll": "Avböj",
+    "learnMore": "Läs mer"
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "lastUpdated": "Senast uppdaterad: 1 mars 2026",
+    "intro": "A5S Group (\"vi\", \"oss\", \"vår\") är engagerade i att skydda din integritet. Denna policy förklarar vilken data vi samlar in, hur vi använder den och dina rättigheter.",
+    "sections": [
+      {
+        "title": "1. Vilken data vi samlar in",
+        "content": "Vi kan samla in ditt namn, din e-postadress och ditt telefonnummer när du fyller i vårt kontakt- eller bokningsformulär. Vi samlar även in anonym användningsdata (besökta sidor, tid på webbplatsen) via cookies för att förbättra vår webbplats."
+      },
+      {
+        "title": "2. Hur vi använder din data",
+        "content": "Dina kontaktuppgifter används enbart för att svara på din förfrågan eller boka en konsultation. Vi säljer, hyr ut eller delar inte din personliga data med tredje parter för marknadsföringsändamål."
+      },
+      {
+        "title": "3. Cookies",
+        "content": "Vi använder cookies för att komma ihåg din språkinställning och för att förstå hur besökare använder vår webbplats. Du kan avböja icke-nödvändiga cookies när som helst via cookie-bannern."
+      },
+      {
+        "title": "4. Datalagring",
+        "content": "Data som skickas via våra formulär lagras säkert på våra servrar i Sverige. Vi behåller kontaktdata i maximalt 2 år om du inte begär radering."
+      },
+      {
+        "title": "5. Dina rättigheter",
+        "content": "Enligt GDPR har du rätt att när som helst få tillgång till, korrigera eller radera dina personuppgifter. För att utöva dessa rättigheter, kontakta oss på: hello@a5sgroup.com"
+      },
+      {
+        "title": "6. Kontakt",
+        "content": "Om du har frågor om denna policy, kontakta oss på hello@a5sgroup.com eller via kontaktformuläret på vår webbplats."
+      }
+    ]
   }
 }

@@ -170,5 +170,43 @@
       { "q": "Who will I be working with?", "a": "Directly with us — Mustafe (developer) and Faster (client relations). No middlemen, no outsourcing, ever." },
       { "q": "What if I'm not happy with the result?", "a": "We iterate until you're satisfied. Revisions are included throughout the entire process." }
     ]
+  },
+  "cookies": {
+    "title": "We use cookies",
+    "description": "We use cookies to improve your experience on our website. By accepting, you agree to our use of cookies for analytics and personalization.",
+    "acceptAll": "Accept All",
+    "declineAll": "Decline",
+    "learnMore": "Learn more"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 1, 2026",
+    "intro": "A5S Group (\"we\", \"us\", \"our\") is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.",
+    "sections": [
+      {
+        "title": "1. What data we collect",
+        "content": "We may collect your name, email address, and phone number when you fill out our contact or booking form. We also collect anonymous usage data (pages visited, time on site) via cookies to improve our website."
+      },
+      {
+        "title": "2. How we use your data",
+        "content": "Your contact details are used solely to respond to your inquiry or schedule a consultation. We do not sell, rent, or share your personal data with third parties for marketing purposes."
+      },
+      {
+        "title": "3. Cookies",
+        "content": "We use cookies to remember your language preference and to understand how visitors use our site. You can decline non-essential cookies at any time via the cookie banner."
+      },
+      {
+        "title": "4. Data storage",
+        "content": "Data submitted through our forms is stored securely on our servers located in Sweden. We retain contact data for a maximum of 2 years unless you request deletion."
+      },
+      {
+        "title": "5. Your rights",
+        "content": "Under GDPR you have the right to access, correct, or delete your personal data at any time. To exercise these rights, contact us at: hello@a5sgroup.com"
+      },
+      {
+        "title": "6. Contact",
+        "content": "If you have any questions about this policy, reach out to us at hello@a5sgroup.com or via the contact form on our website."
+      }
+    ]
   }
 }
