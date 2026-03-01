@@ -38,6 +38,10 @@
     "design": {
       "title": "UI/UX Design",
       "description": "Beautiful, user-friendly designs that work perfectly on all devices."
+    },
+    "apps": {
+      "title": "Mobile Apps",
+      "description": "Native Android & iOS apps — or cross-platform solutions. From simple tools to full-featured apps."
     }
   },
   "about": {
@@ -115,5 +119,56 @@
     "successTitle": "We got your message!",
     "successText": "We'll reach out to you within 24 hours. Talk soon!",
     "close": "Close"
+  },
+  "trustBar": {
+    "stat1": "5+",
+    "stat1Label": "Projects Delivered",
+    "stat2": "2",
+    "stat2Label": "Person Team",
+    "stat3": "24h",
+    "stat3Label": "Response Time",
+    "stat4": "Sweden",
+    "stat4Label": "Based In"
+  },
+  "whyUs": {
+    "eyebrow": "Why choose us",
+    "title": "Why A5S Group?",
+    "subtitle": "We're not an agency. We're two developers who genuinely care about what we build — and about the people we build it for.",
+    "priceBadge": "Starting from",
+    "priceAmount": "1 000 kr",
+    "priceTagline": "The most affordable professional web development in Sweden.",
+    "priceNote": "Excluding hosting and domain name. No hidden fees. No long contracts.",
+    "priceCta": "Get a Free Quote"
+  },
+  "howItWorks": {
+    "eyebrow": "The process",
+    "title": "How It Works",
+    "subtitle": "Simple, fast, and transparent from start to finish.",
+    "step1": {
+      "number": "01",
+      "title": "Book a Free Call",
+      "desc": "Tell us about your project. No commitment, no pressure. We listen and give you honest, straightforward advice."
+    },
+    "step2": {
+      "number": "02",
+      "title": "We Plan & Build",
+      "desc": "We design, develop, and keep you in the loop every step of the way. No surprises, no hidden costs."
+    },
+    "step3": {
+      "number": "03",
+      "title": "You Launch & Grow",
+      "desc": "Your site or app goes live on fast, reliable servers. We stay available for support and future improvements."
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Common Questions",
+    "items": [
+      { "q": "How much does a website cost?", "a": "Starting from 1 000 kr. The final price depends on your requirements — contact us for a free, no-obligation quote." },
+      { "q": "How long does it take to build?", "a": "Small websites are typically delivered within 1 week. Larger projects are scoped during our free call." },
+      { "q": "Do you handle hosting?", "a": "Yes. We offer hosting on our own servers or can deploy to cloud platforms like AWS. Pricing is separate from development." },
+      { "q": "Who will I be working with?", "a": "Directly with us — Mustafe (developer) and Faster (client relations). No middlemen, no outsourcing, ever." },
+      { "q": "What if I'm not happy with the result?", "a": "We iterate until you're satisfied. Revisions are included throughout the entire process." }
+    ]
   }
 }

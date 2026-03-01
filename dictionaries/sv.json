@@ -38,6 +38,10 @@
     "design": {
       "title": "UI/UX Design",
       "description": "Vackra, användarvänliga designer som fungerar perfekt på alla enheter."
+    },
+    "apps": {
+      "title": "Mobilappar",
+      "description": "Android- och iOS-appar — eller plattformsoberoende lösningar. Från enkla verktyg till fullfjädrade appar."
     }
   },
   "about": {
@@ -115,5 +119,56 @@
     "successTitle": "Vi har fått ditt meddelande!",
     "successText": "Vi hör av oss inom 24 timmar. Ses snart!",
     "close": "Stäng"
+  },
+  "trustBar": {
+    "stat1": "5+",
+    "stat1Label": "Levererade Projekt",
+    "stat2": "2",
+    "stat2Label": "Personsteam",
+    "stat3": "24h",
+    "stat3Label": "Svarstid",
+    "stat4": "Sverige",
+    "stat4Label": "Baserade I"
+  },
+  "whyUs": {
+    "eyebrow": "Varför välja oss",
+    "title": "Varför A5S Group?",
+    "subtitle": "Vi är ingen byrå. Vi är två utvecklare som verkligen bryr oss om det vi bygger — och om de vi bygger det för.",
+    "priceBadge": "Från endast",
+    "priceAmount": "1 000 kr",
+    "priceTagline": "Sveriges billigaste professionella webbutveckling.",
+    "priceNote": "Exklusive hosting och domännamn. Inga dolda avgifter. Inga långa kontrakt.",
+    "priceCta": "Få en Gratis Offert"
+  },
+  "howItWorks": {
+    "eyebrow": "Så här funkar det",
+    "title": "Hur Det Går Till",
+    "subtitle": "Enkelt, snabbt och transparent från början till slut.",
+    "step1": {
+      "number": "01",
+      "title": "Boka ett Gratis Samtal",
+      "desc": "Berätta om ditt projekt. Ingen förbindelse, inget tryck. Vi lyssnar och ger dig ärliga, raka råd."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Vi Planerar & Bygger",
+      "desc": "Vi designar, utvecklar och håller dig uppdaterad varje steg på vägen. Inga överraskningar, inga dolda kostnader."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Du Lanserar & Växer",
+      "desc": "Din webbplats eller app går live på snabba, pålitliga servrar. Vi finns kvar för support och framtida förbättringar."
+    }
+  },
+  "faq": {
+    "eyebrow": "VANLIGA FRÅGOR",
+    "title": "Vanliga Frågor",
+    "items": [
+      { "q": "Vad kostar en hemsida?", "a": "Från 1 000 kr. Slutpriset beror på dina krav — kontakta oss för en kostnadsfri offert utan förbindelser." },
+      { "q": "Hur lång tid tar det att bygga?", "a": "Enkla hemsidor levereras vanligtvis inom 1 vecka. Större projekt specificeras under vårt gratis samtal." },
+      { "q": "Hanterar ni hosting?", "a": "Ja. Vi erbjuder hosting på våra egna servrar eller kan driftsätta på molnplattformar som AWS. Priset är separat från utveckling." },
+      { "q": "Vem jobbar jag med?", "a": "Direkt med oss — Mustafe (utvecklare) och Faster (kundrelationer). Inga mellanhänder, ingen outsourcing." },
+      { "q": "Vad händer om jag inte är nöjd?", "a": "Vi itererar tills du är nöjd. Revideringar ingår under hela processen." }
+    ]
   }
 }

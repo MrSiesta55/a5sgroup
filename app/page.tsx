@@ -84,11 +84,105 @@ export default async function Home() {
       {/* Section 2: Services - Shooting stars appear */}
       <ServicesSection lang={lang} dict={dict} />
 
-      {/* Section 3: Tech Stack - Nebula clouds appear */}
-      <div className="relative z-10 flex items-center justify-center py-16 sm:py-24 font-sans px-4 sm:px-6">
+      {/* Section 3: Why A5S Group */}
+      <div className="relative z-10 py-10 sm:py-16 px-4 sm:px-6 font-sans">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-8 sm:mb-10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-purple-400 mb-3">{dict.whyUs.eyebrow}</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4">
+              {dict.whyUs.title}
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+              {dict.whyUs.subtitle}
+            </p>
+          </div>
+          {/* Value cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            {[
+              { title: dict.about.value1.title, desc: dict.about.value1.desc, icon: "🏠" },
+              { title: dict.about.value2.title, desc: dict.about.value2.desc, icon: "📋" },
+              { title: dict.about.value3.title, desc: dict.about.value3.desc, icon: "⚡" },
+            ].map((card, i) => (
+              <div
+                key={i}
+                className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 sm:p-8 flex flex-col gap-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+              >
+                <span className="text-3xl">{card.icon}</span>
+                <h3 className="text-xl font-bold text-white">{card.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{card.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Pricing highlight */}
+          <div className="mt-8 sm:mt-10 rounded-2xl border border-white/10 bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-purple-500/10 backdrop-blur-md p-6 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div className="flex flex-col gap-2 text-center sm:text-left">
+              <span className="text-xs font-semibold uppercase tracking-widest text-purple-400">{dict.whyUs.priceBadge}</span>
+              <span className="text-5xl sm:text-6xl font-bold text-white">{dict.whyUs.priceAmount}</span>
+              <p className="text-base sm:text-lg font-semibold text-white/90">{dict.whyUs.priceTagline}</p>
+              <p className="text-sm text-gray-400">{dict.whyUs.priceNote}</p>
+            </div>
+            <a
+              href="/book"
+              className="flex-shrink-0 px-8 py-4 bg-white text-black rounded-full font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/20 whitespace-nowrap"
+            >
+              {dict.whyUs.priceCta}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="relative z-10 py-10 sm:py-16 px-4 sm:px-6 font-sans">
+        <div className="max-w-5xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-8 sm:mb-10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-blue-400 mb-3">{dict.howItWorks.eyebrow}</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4">
+              {dict.howItWorks.title}
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-xl mx-auto">
+              {dict.howItWorks.subtitle}
+            </p>
+          </div>
+          {/* Steps */}
+          <div className="flex flex-col sm:flex-row gap-8 sm:gap-6 relative">
+            {/* connector line on desktop */}
+            <div className="hidden sm:block absolute top-10 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-white/10" />
+            {[
+              { number: dict.howItWorks.step1.number, title: dict.howItWorks.step1.title, desc: dict.howItWorks.step1.desc },
+              { number: dict.howItWorks.step2.number, title: dict.howItWorks.step2.title, desc: dict.howItWorks.step2.desc },
+              { number: dict.howItWorks.step3.number, title: dict.howItWorks.step3.title, desc: dict.howItWorks.step3.desc },
+            ].map((step, i) => (
+              <div key={i} className="flex-1 flex flex-col items-center text-center gap-4">
+                <div className="relative z-10 w-20 h-20 rounded-full bg-gradient-to-br from-blue-500/30 to-purple-500/30 border border-white/20 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-white">{step.number}</span>
+                </div>
+                <h3 className="text-xl font-bold text-white">{step.title}</h3>
+                <p className="text-gray-400 leading-relaxed text-sm sm:text-base">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+          {/* Bottom CTA */}
+          <div className="text-center mt-8 sm:mt-10">
+            <a
+              href="/book"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-full font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/20"
+            >
+              {dict.contactSection.bookCta}
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <p className="mt-3 text-sm text-white/40">{dict.contactSection.trust}</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 5: Tech Stack - Nebula clouds appear */}
+      <div className="relative z-10 flex items-center justify-center py-10 sm:py-16 font-sans px-4 sm:px-6">
         <div className="max-w-7xl w-full">
           {/* Section Header */}
-          <div className="text-center mb-12 sm:mb-16">
+          <div className="text-center mb-8 sm:mb-10">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4">
               {lang === 'sv' ? 'Teknologier Vi Behärskar' : 'Technologies We Master'}
             </h2>
@@ -140,6 +234,27 @@ export default async function Home() {
               </>
             );
           })()}
+        </div>
+      </div>
+
+      {/* Section: FAQ */}
+      <div className="relative z-10 py-10 sm:py-16 px-4 sm:px-6 font-sans">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-8 sm:mb-10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-blue-400 mb-3">{dict.faq.eyebrow}</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white drop-shadow-lg">{dict.faq.title}</h2>
+          </div>
+          <div className="flex flex-col gap-3">
+            {(dict.faq.items as { q: string; a: string }[]).map((item, i) => (
+              <details key={i} className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-colors duration-300">
+                <summary className="flex items-center justify-between gap-4 p-5 sm:p-6 cursor-pointer list-none">
+                  <span className="font-semibold text-white text-base sm:text-lg">{item.q}</span>
+                  <svg className="w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300 group-open:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+                </summary>
+                <p className="px-5 sm:px-6 pb-5 sm:pb-6 text-gray-400 leading-relaxed text-sm sm:text-base border-t border-white/5 pt-4">{item.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </div>
 

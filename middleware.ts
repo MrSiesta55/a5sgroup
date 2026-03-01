@@ -28,13 +28,7 @@ export function middleware(request: NextRequest) {
   
   // Determine locale based on country
   // Sweden (SE) -> Swedish, everything else -> English
-  let locale = country === 'SE' ? 'sv' : 'en';
-  
-  // Optional: Also check browser language as fallback
-  const browserLang = request.headers.get('accept-language')?.split(',')[0]?.split('-')[0];
-  if (!geo && browserLang === 'sv') {
-    locale = 'sv';
-  }
+  const locale = country === 'SE' ? 'sv' : 'en';
 
   // Set the language cookie
   const response = NextResponse.next();
