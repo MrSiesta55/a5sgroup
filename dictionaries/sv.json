@@ -99,6 +99,14 @@
         "url": "https://www.iibfuran.com",
         "logo": "https://www.iibfuran.com/icon.png",
         "year": "2025"
+      },
+      {
+        "title": "Bellevue Afro Barber",
+        "description": "Modern hemsida för en barbershop i Göteborg. Bokningsformulär, tjänster och priser, Google Maps-integration och SEO-optimering för lokala sökningar.",
+        "tags": ["Hemsida", "SEO", "Next.js", "Göteborg"],
+        "url": "https://bellevueafrobarber.se",
+        "logo": "https://bellevueafrobarber.se/icon.svg",
+        "year": "2026"
       }
     ]
   },

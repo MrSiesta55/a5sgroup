@@ -99,6 +99,14 @@
         "url": "https://www.iibfuran.com",
         "logo": "https://www.iibfuran.com/icon.png",
         "year": "2025"
+      },
+      {
+        "title": "Bellevue Afro Barber",
+        "description": "Modern website for a barbershop in Gothenburg, Sweden. Booking form, services & pricing, Google Maps integration, and SEO optimised for local search.",
+        "tags": ["Website", "SEO", "Next.js", "Gothenburg"],
+        "url": "https://bellevueafrobarber.se",
+        "logo": "https://bellevueafrobarber.se/icon.svg",
+        "year": "2026"
       }
     ]
   },

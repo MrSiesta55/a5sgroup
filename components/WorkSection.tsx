@@ -37,7 +37,7 @@ export default function WorkSection({ lang, dict }: WorkSectionProps) {
           ))}
 
           {/* Coming soon placeholder cards */}
-          {[1, 2].map(n => (
+          {[1].map(n => (
             <div
               key={`soon-${n}`}
               className="bg-white/3 border border-white/8 rounded-3xl p-7 flex flex-col items-center justify-center min-h-[280px] gap-3 opacity-40"

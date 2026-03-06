@@ -1,4 +1,3 @@
-import { DayNightBackground } from "@/components/DayNightBackground";
 import Header from "@/components/Header";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
@@ -12,7 +11,6 @@ export default async function AboutPage() {
 
   return (
     <>
-      <DayNightBackground />
       <Header lang={lang} dict={dict} />
       <AboutSection lang={lang} dict={dict} />
       <Footer lang={lang} dict={dict} />

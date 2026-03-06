@@ -56,6 +56,9 @@ export async function generateMetadata(): Promise<Metadata> {
       index: true,
       follow: true,
     },
+    icons: {
+      icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    },
   };
 }
 
@@ -73,6 +76,7 @@ export default async function RootLayout({
     <html lang={lang}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{ background: 'radial-gradient(ellipse 80% 50% at 50% -5%, rgba(99,102,241,0.18) 0%, transparent 55%), linear-gradient(to bottom, #06060f, #080c1a 50%, #06060f)' }}
       >
         {children}
         <CookieBanner dict={dict.cookies} />

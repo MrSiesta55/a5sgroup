@@ -1,4 +1,3 @@
-import { DayNightBackground } from "@/components/DayNightBackground";
 import Header from "@/components/Header";
 import WorkSection from "@/components/WorkSection";
 import Footer from "@/components/Footer";
@@ -12,7 +11,6 @@ export default async function WorkPage() {
 
   return (
     <>
-      <DayNightBackground />
       <Header lang={lang} dict={dict} />
       <main className="pt-32">
         <WorkSection lang={lang} dict={dict} />

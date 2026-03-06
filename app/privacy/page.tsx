@@ -1,6 +1,5 @@
 import { cookies } from 'next/headers';
 import { getDictionary, Locale } from '@/lib/dictionary';
-import { DayNightBackground } from '@/components/DayNightBackground';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
@@ -13,7 +12,6 @@ export default async function PrivacyPage() {
 
   return (
     <>
-      <DayNightBackground />
       <Header lang={lang} dict={dict} />
 
       <main className="relative z-10 min-h-screen pt-36 pb-24 px-4 sm:px-6">
