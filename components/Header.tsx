@@ -12,6 +12,7 @@ interface HeaderProps {
 
 export default function Header({ lang, dict }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
 
   return (
     <>
@@ -43,13 +44,24 @@ export default function Header({ lang, dict }: HeaderProps) {
             <li>
               <LanguageSwitcher currentLang={lang} />
             </li>
-            <li>
-              <Link
-                href="/book"
+            <li className="relative">
+              <button
+                onClick={() => setShowPhone(!showPhone)}
                 className="px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap bg-white text-black transition-all duration-300 hover:bg-white/90 hover:scale-105 hover:shadow-xl ml-1"
               >
-                {dict.nav.bookCall}
-              </Link>
+                📞 {dict.nav.bookCall}
+              </button>
+              {showPhone && (
+                <div className="absolute right-0 top-full mt-3 bg-black/80 backdrop-blur-xl border border-white/15 rounded-2xl px-5 py-4 shadow-2xl z-50 min-w-max">
+                  <p className="text-white/50 text-xs mb-1">{lang === 'sv' ? 'Ring oss på' : 'Call us at'}</p>
+                  <a
+                    href="tel:+46738901521"
+                    className="text-white font-semibold text-lg tracking-wide hover:text-purple-300 transition-colors"
+                  >
+                    +46 73 890 15 21
+                  </a>
+                </div>
+              )}
             </li>
           </ul>
 
@@ -93,13 +105,13 @@ export default function Header({ lang, dict }: HeaderProps) {
               <LanguageSwitcher currentLang={lang} />
             </div>
             <div className="px-3 py-2 mt-2">
-              <Link
-                href="/book"
+              <a
+                href="tel:+46738901521"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block w-full text-center px-6 py-3 rounded-full text-sm font-medium bg-white text-black transition-all duration-300 hover:bg-white/90"
               >
-                {dict.nav.bookCall}
-              </Link>
+                📞 {dict.nav.bookCall} — +46 73 890 15 21
+              </a>
             </div>
           </div>
         )}
