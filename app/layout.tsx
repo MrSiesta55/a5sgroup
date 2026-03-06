@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export async function generateMetadata(): Promise<Metadata> {
   const cookieStore = await cookies();
-  const lang = cookieStore.get('NEXT_LOCALE')?.value || 'en';
+  const lang = cookieStore.get('NEXT_LOCALE')?.value || 'sv';
   const isSv = lang === 'sv';
 
   const title = isSv
